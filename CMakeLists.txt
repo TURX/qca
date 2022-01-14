@@ -33,6 +33,7 @@ endif()
 
 if(APPLE)
   option(OSX_FRAMEWORK "Build a Mac OS X Framework" ON)
+  set(CMAKE_OSX_ARCHITECTURES "arm64" CACHE STRING "Build architectures for Mac OS X" FORCE)
 else()
   set(OSX_FRAMEWORK OFF)
 endif()
